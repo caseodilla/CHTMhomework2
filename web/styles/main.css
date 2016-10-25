@@ -1,0 +1,83 @@
+/* 
+    Created on : Oct 24, 2016, 7:35:42 PM
+    Author     : Casey Hayes
+*/
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  border: 2px solid darkblue;
+  margin: auto;
+}
+
+h1 {
+  color: darkblue;
+  margin-left: 1em;
+}
+
+p {
+  margin: .25em;
+}
+
+footer {
+  border-top: 2px solid darkblue;
+  margin-top: 1.5em;
+}
+
+footer p {
+  margin: 1em 1em 1em 2em;
+}
+
+/* Screens bigger than 400px */
+
+@media screen and (min-width: 401px) {
+  
+  body {
+    max-width: 600px;
+    min-width: 485px;
+  }
+  
+  form label {
+    float: left;
+    padding-right: 1em;
+    text-align: right;
+    width: 15em;
+  }
+  
+  form input {
+    height: 3em;
+  }
+  
+  form #submit {
+    margin-left: 16em;
+  }
+  
+}
+
+/* Screens smaller than 401px */
+
+@media screen and (max-width: 400px) {
+  
+  body {
+    margin: auto;
+    min-width: 235px;
+    width: 95%;
+  }
+  
+  form label {
+    margin: 1em 0 1em 2em;
+    width: 80%;
+  }
+  
+  form input {
+    height: 2em;
+    margin: 1em 0 1em 2em;
+    width: 80%;
+  }
+  
+  form #submit {
+    width: auto;
+  }
+}
