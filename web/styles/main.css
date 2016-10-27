@@ -39,21 +39,20 @@ footer p {
     min-width: 485px;
   }
   
-  form label {
+  .left {
     float: left;
     padding-right: 1em;
     text-align: right;
     width: 15em;
   }
   
-  form input {
+  .right {
     height: 3em;
   }
   
-  form #submit {
+  #submit {
     margin-left: 16em;
-  }
-  
+  }  
 }
 
 /* Screens smaller than 401px */
@@ -71,18 +70,18 @@ footer p {
     margin-left: 1.75em;
   }
   
-  form label {
+  .left {
     margin: 1em 0 1em 2em;
     width: 80%;
   }
   
-  form input {
+  .right {
     height: 2em;
     margin: 1em 0 1em 2em;
     width: 12em;
   }
   
-  form #submit {
+  #submit {
     width: auto;
   }
 }
