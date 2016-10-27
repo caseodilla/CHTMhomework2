@@ -3,6 +3,7 @@ package chtm.calculator;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.text.DecimalFormat;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -41,15 +42,20 @@ public class calculate extends HttpServlet {
     if (action.equals("restart")) {
       url = "/index.jsp";    // the "join" page
     } else if (action.equals("calculate")) {
-      int amount = Integer.parseInt(request.getParameter("amount"));
-      int rate = Integer.parseInt(request.getParameter("rate"));
+      float amount = Float.parseFloat(request.getParameter("amount"));
+      float rate = Float.parseFloat(request.getParameter("rate"));
       int years = Integer.parseInt(request.getParameter("years"));
+      double futureValue = amount * Math.pow((1+(rate/100)),years);
+      
+      DecimalFormat dollarFormat = new DecimalFormat("$#,##0.00");
+      DecimalFormat rateFormat = new DecimalFormat("#.0");
       
       url = "/calculate.jsp";
       
-      request.setAttribute("amount", amount);
-      request.setAttribute("rate", amount);
-      request.setAttribute("years", amount);
+      request.setAttribute("amount", dollarFormat.format(amount));
+      request.setAttribute("rate", rateFormat.format(rate));
+      request.setAttribute("years", years);
+      request.setAttribute("futureValue", dollarFormat.format(futureValue));
     }
     getServletContext()
             .getRequestDispatcher(url)
