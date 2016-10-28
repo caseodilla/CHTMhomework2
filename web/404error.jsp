@@ -1,8 +1,5 @@
-<%-- 
-    Document   : 404error
-    Created on : Oct 27, 2016, 10:28:11 PM
-    Author     : tmcintyre
---%>
+<!--©2016 Casey Hayes & Tanner McIntyre. All Rights Reserved.-->
+
 <%@page contentType="text/html" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="/includes/header.html" %>

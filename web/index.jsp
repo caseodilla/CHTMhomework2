@@ -1,8 +1,4 @@
-<%-- 
-    Document   : index
-    Created on : Oct 24, 2016, 7:35:42 PM
-    Author     : Casey Hayes
---%>
+<!--©2016 Casey Hayes & Tanner McIntyre. All Rights Reserved.-->
 
 <%@page contentType="text/html" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

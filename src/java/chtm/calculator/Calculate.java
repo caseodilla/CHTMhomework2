@@ -1,3 +1,5 @@
+//©2016 Casey Hayes & Tanner McIntyre. All Rights Reserved.
+
 package chtm.calculator;
 
 import chtm.objects.User;

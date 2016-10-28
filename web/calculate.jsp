@@ -1,8 +1,4 @@
-<%-- 
-    Document   : calculate
-    Created on : Oct 26, 2016, 8:44:06 PM
-    Author     : Casey Hayes
---%>
+<!--©2016 Casey Hayes & Tanner McIntyre. All Rights Reserved.-->
 
 <%@page contentType="text/html" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
